@@ -24,7 +24,7 @@ class FileAttributes {
 public:
     FileAttributes();
 public:
-    enum fileType {a,d,c,b,l};
+    enum fileType {a ,d ,c ,b , l};
     
     char* getFilename();
     void setFilename(char* filename);

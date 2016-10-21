@@ -4,9 +4,10 @@ ProblemSolving20162ModelBuilder.o: ProblemSolving20162ModelBuilder.cpp \
  Application.h Mediator_CPU.h Abstr_Thread.h Util_Queue.h Abstr_Process.h \
  Abstr_MemoryManager.h Abstr_MemoryChunk.h HW_MMU.h Mediator_Timer.h \
  HW_CPU.h Abstr_Scheduler.h Util_Scheduling_Queue.h Simul_Debug.h \
- Abstr_FileSystem.h Mediator_DMA.h Mediator_HardDisk.h HW_HardDisk.h \
- Mediator_MMU.h Traits.h HW_Timer.h ModuleInvoke_HardwareEvent.h \
- Simulator.h Simul_Event.h ModuleCreate.h ModuleDispose.h \
+ Abstr_FileSystem.h Abstr_FileAllocationTable.h Mediator_HardDisk.h \
+ HW_HardDisk.h Abstr_FileAllocator.h Mediator_DMA.h Mediator_MMU.h \
+ Traits.h HW_Timer.h ModuleInvoke_HardwareEvent.h Simulator.h \
+ Simul_Event.h ModuleCreate.h ModuleDispose.h \
  ModuleInvoke_PulseExecution.h
 
 ProblemSolving20162ModelBuilder.h:
@@ -53,11 +54,15 @@ Simul_Debug.h:
 
 Abstr_FileSystem.h:
 
-Mediator_DMA.h:
+Abstr_FileAllocationTable.h:
 
 Mediator_HardDisk.h:
 
 HW_HardDisk.h:
+
+Abstr_FileAllocator.h:
+
+Mediator_DMA.h:
 
 Mediator_MMU.h:
 

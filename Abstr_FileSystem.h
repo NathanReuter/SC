@@ -14,7 +14,12 @@
 #ifndef FILESYSTEM_H
 #define FILESYSTEM_H
 
+#include "Abstr_FileAllocationTable.h"
+#include "Abstr_FileAllocator.h"
 
+/* Deve implementar o conceito de sistema de arquivos, como criar arquivo, procurar arquivo, deletar arquivo,
+ * hierarquia de arquivos etc. Ainda não implementada.
+ * Deve ser implementada para os temas 1.10, e possivelmente 1.11.*/
 
 class FileSystem {
     friend class ProblemTester;
@@ -24,9 +29,12 @@ public:
     virtual ~FileSystem();
 public:
     // INSERT YOUR CODE HERE
+    int createFile();
+//    FileAllocationEntry::fileIdentifier searchFile(const unsigned char* path);
+//    int deleteFile();
     // ...
 private:
-
+    FileAllocator * fileAllocator;
 };
 
 #endif /* FILESYSTEM_H */

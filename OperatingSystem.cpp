@@ -55,6 +55,7 @@ void OperatingSystem::ExecuteTestCode() {
 
     // INSERT HERE YOUR CODE
     // You can write a test code that will be executed and will invoke system calls or whenever you want
+    std::cout << "File System Create File " << File_System()->createFile() << std::endl;
     // Follow the examples...
     // ...
     

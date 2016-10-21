@@ -11,6 +11,7 @@
  * Created on 9 de Setembro de 2016, 10:13
  */
 
+#include <iostream>
 #include "Abstr_FileAllocator.h"
 
 FileAllocator::FileAllocator(HardDisk* disk, FileAllocationTable* fat) {
@@ -19,4 +20,6 @@ FileAllocator::FileAllocator(HardDisk* disk, FileAllocationTable* fat) {
 FileAllocator::FileAllocator(const FileAllocator& orig) {
 }
 
-
+void FileAllocator::createFile() {
+    std::cout << "File Created!" << std::endl;
+}
