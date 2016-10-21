@@ -15,11 +15,20 @@
 #include "Abstr_FileAllocator.h"
 
 FileAllocator::FileAllocator(HardDisk* disk, FileAllocationTable* fat) {
+    this->disk = disk;
+    this->fat = fat;
 }
 
 FileAllocator::FileAllocator(const FileAllocator& orig) {
 }
 
+/* Create an file*/
 void FileAllocator::createFile() {
-    std::cout << "File Created!" << std::endl;
+    FileAttributes newFileAtt = FileAttributes();
+    newFileAtt.setFilename("newfile");
+    newFileAtt.setSize(5);
+    newFileAtt.setType(FileAttributes::fileType::c);
+    newFileAtt.showAttributes();
+    FileAllocationEntry fileEntry = FileAllocationEntry(this->fileCount, this->disk->getBlockSize(), newFileAtt);
+
 }

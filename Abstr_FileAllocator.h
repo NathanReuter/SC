@@ -41,6 +41,7 @@ private:
 private:
     HardDisk* disk;
     FileAllocationTable* fat;
+    int fileCount = 0;
 };
 
 #endif /* FILEALLOCATOR_H */

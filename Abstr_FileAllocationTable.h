@@ -32,6 +32,7 @@ public:
     void setSize(unsigned long size);
     fileType getType();
     void setType(fileType type);
+    void showAttributes();
 private:
     char* filename;
     unsigned long size;

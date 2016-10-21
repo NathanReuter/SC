@@ -121,6 +121,6 @@ set(SOURCE_FILES
     Util_Queue.cpp
     Util_Queue.h
     Util_Scheduling_Queue.cpp
-    Util_Scheduling_Queue.h)
+    Util_Scheduling_Queue.h FileAttributes.cpp FileAllocationEntry.cpp)
 
-add_executable(20162_INE5412_SC_Theme1_StartPoint_master ${SOURCE_FILES})
+add_executable(20162_INE5412_SC_Theme1_StartPoint_master ${SOURCE_FILES} FileAttributes.cpp)
