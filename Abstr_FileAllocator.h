@@ -27,7 +27,7 @@ public:
     FileAllocator(HardDisk* disk, FileAllocationTable* fat);
     FileAllocator(const FileAllocator& orig);
 public:
-    void createFile();
+    FileAllocationEntry::fileIdentifier createFile();
     void removeFile(const unsigned char* path);
     
     FileAllocationEntry::fileIdentifier openFile(const unsigned char* path);

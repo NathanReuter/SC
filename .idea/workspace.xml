@@ -12,17 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83d184d4-2a49-4e98-9fc4-960da7dfdf69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FileAllocationEntry.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FileAttributes.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Abstr_FileAllocationTable.o" afterPath="$PROJECT_DIR$/Abstr_FileAllocationTable.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Abstr_FileAllocator.o" afterPath="$PROJECT_DIR$/Abstr_FileAllocator.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Abstr_FileSystem.o" afterPath="$PROJECT_DIR$/Abstr_FileSystem.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/20162-INE5412-SC-Theme1-StartPoint-master.iml" afterPath="$PROJECT_DIR$/.idea/20162-INE5412-SC-Theme1-StartPoint-master.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mediator_HardDisk.o" afterPath="$PROJECT_DIR$/Mediator_HardDisk.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Abstr_FileAllocationTable.cpp" afterPath="$PROJECT_DIR$/Abstr_FileAllocationTable.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Abstr_FileAllocationTable.h" afterPath="$PROJECT_DIR$/Abstr_FileAllocationTable.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Abstr_FileAllocator.cpp" afterPath="$PROJECT_DIR$/Abstr_FileAllocator.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Abstr_FileAllocator.h" afterPath="$PROJECT_DIR$/Abstr_FileAllocator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileAllocationEntry.cpp" afterPath="$PROJECT_DIR$/FileAllocationEntry.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mediator_HardDisk.cpp" afterPath="$PROJECT_DIR$/Mediator_HardDisk.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vpl_execution" afterPath="$PROJECT_DIR$/vpl_execution" />
     </list>
     <ignored path="20162-INE5412-SC-Theme1-StartPoint-master.iws" />
@@ -46,8 +46,8 @@
       <file leaf-file-name="Abstr_FileAllocator.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Abstr_FileAllocator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="31" column="62" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="62" />
+            <state relative-caret-position="306">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
                 <element signature="e#290#309#0" expanded="true" />
               </folding>
@@ -55,24 +55,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileAllocationEntry.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FileAllocationEntry.cpp">
+      <file leaf-file-name="Abstr_FileAllocator.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Abstr_FileAllocator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="478">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Abstr_FileSystem.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Abstr_FileSystem.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-              <folding>
-                <element signature="e#326#364#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +68,8 @@
       <file leaf-file-name="OperatingSystem.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OperatingSystem.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="47" column="20" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="20" />
+            <state relative-caret-position="253">
+              <caret line="57" column="88" selection-start-line="57" selection-start-column="88" selection-end-line="57" selection-end-column="88" />
               <folding>
                 <element signature="e#90#107#0" expanded="true" />
               </folding>
@@ -99,52 +87,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Abstr_FileSystem.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Abstr_FileSystem.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+              <folding>
+                <element signature="e#326#364#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Abstr_FileAllocationTable.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Abstr_FileAllocationTable.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="514">
+              <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+              <folding>
+                <element signature="e#354#384#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mediator_HardDisk.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mediator_HardDisk.h">
+      <file leaf-file-name="Abstr_FileAllocationTable.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Abstr_FileAllocationTable.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="94" column="39" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mediator_HardDisk.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mediator_HardDisk.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1116">
-              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HW_HardDisk.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_HardDisk.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HW_HardDisk.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_HardDisk.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="892">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <element signature="e#296#315#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,15 +134,17 @@
         <option value="$PROJECT_DIR$/Traits.h" />
         <option value="$PROJECT_DIR$/HW_HardDisk.h" />
         <option value="$PROJECT_DIR$/HW_HardDisk.cpp" />
-        <option value="$PROJECT_DIR$/OperatingSystem.cpp" />
         <option value="$PROJECT_DIR$/Abstr_FileSystem.h" />
         <option value="$PROJECT_DIR$/Abstr_FileSystem.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Abstr_FileAllocationTable.h" />
         <option value="$PROJECT_DIR$/FileAttributes.cpp" />
         <option value="$PROJECT_DIR$/Abstr_FileAllocator.h" />
-        <option value="$PROJECT_DIR$/Abstr_FileAllocator.cpp" />
+        <option value="$PROJECT_DIR$/Mediator_HardDisk.cpp" />
+        <option value="$PROJECT_DIR$/OperatingSystem.cpp" />
         <option value="$PROJECT_DIR$/FileAllocationEntry.cpp" />
+        <option value="$PROJECT_DIR$/Abstr_FileAllocationTable.h" />
+        <option value="$PROJECT_DIR$/Abstr_FileAllocator.cpp" />
+        <option value="$PROJECT_DIR$/Abstr_FileAllocationTable.cpp" />
       </list>
     </option>
   </component>
@@ -210,24 +186,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20162-INE5412-SC-Theme1-StartPoint-master" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20162-INE5412-SC-Theme1-StartPoint-master" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20162-INE5412-SC-Theme1-StartPoint-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -439,29 +398,30 @@
       <updated>1477000412867</updated>
       <workItem from="1477000414029" duration="7718000" />
       <workItem from="1477052000251" duration="5816000" />
-      <workItem from="1477060342261" duration="8122000" />
+      <workItem from="1477060342261" duration="8422000" />
+      <workItem from="1477250905850" duration="10713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21656000" />
+    <option name="totallyTimeSpent" value="32669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25724828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25724828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44780794" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5093946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986821" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48643005" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44780794" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -488,6 +448,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HW_HardDisk.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Abstr_FileAllocator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -530,9 +498,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#286#305#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -548,7 +514,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="e#354#384#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -783,14 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Abstr_FileAllocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OperatingSystem.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
@@ -801,17 +761,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Abstr_FileAllocationTable.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HW_HardDisk.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
+        <state relative-caret-position="-125">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
@@ -819,42 +771,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_HardDisk.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mediator_HardDisk.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+        <state relative-caret-position="199">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mediator_HardDisk.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="94" column="39" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="39" />
+        <state relative-caret-position="-287">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Abstr_FileSystem.h">
+    <entry file="file://$PROJECT_DIR$/Mediator_HardDisk.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="1324">
+          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
           <folding>
-            <element signature="e#326#364#0" expanded="true" />
+            <element signature="e#278#308#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileAllocationEntry.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Abstr_FileAllocator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#290#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Abstr_FileAllocator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OperatingSystem.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="253">
+          <caret line="57" column="88" selection-start-line="57" selection-start-column="88" selection-end-line="57" selection-end-column="88" />
           <folding>
             <element signature="e#90#107#0" expanded="true" />
           </folding>
@@ -869,29 +839,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Abstr_FileAllocationTable.h">
+    <entry file="file://$PROJECT_DIR$/Abstr_FileSystem.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Abstr_FileAllocator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="31" column="62" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="62" />
+        <state relative-caret-position="558">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
           <folding>
-            <element signature="e#290#309#0" expanded="true" />
+            <element signature="e#326#364#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileAllocationEntry.cpp">
+    <entry file="file://$PROJECT_DIR$/Abstr_FileAllocationTable.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="514">
+          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+          <folding>
+            <element signature="e#354#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Abstr_FileAllocationTable.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#296#315#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

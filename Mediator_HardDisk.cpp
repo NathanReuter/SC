@@ -62,7 +62,7 @@ void HardDisk::accessBlock(DiskAccessRequest* request) {
 }
 
 unsigned int HardDisk::getBlockSize() {
-    
+
 }
 
 void HardDisk::setMaxBlocks(const HW_HardDisk::blockNumber maxBlocks) {
@@ -70,5 +70,8 @@ void HardDisk::setMaxBlocks(const HW_HardDisk::blockNumber maxBlocks) {
 }
 
 HW_HardDisk::blockNumber getMaxBlocks() {
-    
+}
+
+HW_HardDisk::blockNumber HardDisk::getMaxBlocks() {
+    return _maxBlocks;
 }

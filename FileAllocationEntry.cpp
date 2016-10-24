@@ -12,3 +12,7 @@ FileAllocationEntry::FileAllocationEntry(fileIdentifier inode, HW_HardDisk::bloc
 HW_HardDisk::blockNumber FileAllocationEntry::getBlock() {
     return block;
 }
+
+FileAllocationEntry::fileIdentifier FileAllocationEntry::getNode() {
+    return inode;
+}

@@ -15,7 +15,7 @@
 #define FILEALLOCATIONTABLE_H
 
 #include "Mediator_HardDisk.h"
-
+#include <vector>
 
 /**
  * Base class for file attributes. Includes only the name, size and type of a file.
@@ -69,7 +69,7 @@ public:
     FileAllocationTable(HardDisk* disk);
     FileAllocationTable(const FileAllocationTable& orig);
 public:
-    void addFileEntry(FileAllocationEntry fatEntry);
+    int addFileEntry(FileAllocationEntry fatEntry);
     void removeFileEntryByNode(FileAllocationEntry::fileIdentifier inode);
     void removeFileEntryByRank(unsigned int rank);
     FileAllocationEntry getFileEntryByNode(FileAllocationEntry::fileIdentifier inode);
@@ -77,6 +77,7 @@ public:
     void setFileEntry(unsigned int rank, FileAllocationEntry fatEntry);
 private:
     HardDisk* disk;
+    std::vector<FileAllocationEntry> table;
 };
 
 

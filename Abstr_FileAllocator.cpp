@@ -23,12 +23,13 @@ FileAllocator::FileAllocator(const FileAllocator& orig) {
 }
 
 /* Create an file*/
-void FileAllocator::createFile() {
+FileAllocationEntry::fileIdentifier FileAllocator::createFile() {
     FileAttributes newFileAtt = FileAttributes();
-    newFileAtt.setFilename("newfile");
-    newFileAtt.setSize(5);
-    newFileAtt.setType(FileAttributes::fileType::c);
-    newFileAtt.showAttributes();
     FileAllocationEntry fileEntry = FileAllocationEntry(this->fileCount, this->disk->getBlockSize(), newFileAtt);
+    if (fat->addFileEntry(fileEntry) == 0) {
+        FileAllocationEntry::fileIdentifier identifier = fileCount;
+        this->fileCount++;
 
+        return this->fileCount - 1;
+    }
 }
