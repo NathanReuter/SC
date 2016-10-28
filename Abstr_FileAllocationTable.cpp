@@ -54,3 +54,8 @@ void FileAllocationTable::removeFileEntryByNode(FileAllocationEntry::fileIdentif
 void FileAllocationTable::removeFileEntryByRank(unsigned int rank) {
     table.erase(table.begin() + rank);
 }
+
+void FileAllocationTable::setFileEntry(unsigned int rank, FileAllocationEntry fatEntry) {
+    removeFileEntryByNode(fatEntry.getNode());
+    table.insert(table.begin() + rank, fatEntry);
+}

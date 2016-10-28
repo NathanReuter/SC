@@ -27,10 +27,10 @@ public:
     FileAllocator(HardDisk* disk, FileAllocationTable* fat);
     FileAllocator(const FileAllocator& orig);
 public:
-    FileAllocationEntry::fileIdentifier createFile();
+    FileAllocationEntry::fileIdentifier createFile(const char* path);
     void removeFile(const unsigned char* path);
     
-    FileAllocationEntry::fileIdentifier openFile(const unsigned char* path);
+    FileAllocationEntry::fileIdentifier openFile(const char* path);
     void closeFile(const FileAllocationEntry::fileIdentifier file);
     
     unsigned int readFile(const FileAllocationEntry::fileIdentifier file, const unsigned int numBytes, char* bufferBytes);

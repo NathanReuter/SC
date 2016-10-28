@@ -55,7 +55,7 @@ public:
     fileIdentifier getNode();
     HW_HardDisk::blockNumber getBlock();
     FileAttributes getAttributes();
-    void setName(fileIdentifier inode);
+    void setNode(fileIdentifier inode);
     void setBlock(HW_HardDisk::blockNumber block);
     void setAttributes(FileAttributes attributes);    
 private:

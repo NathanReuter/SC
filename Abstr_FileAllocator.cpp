@@ -23,13 +23,17 @@ FileAllocator::FileAllocator(const FileAllocator& orig) {
 }
 
 /* Create an file*/
-FileAllocationEntry::fileIdentifier FileAllocator::createFile() {
+FileAllocationEntry::fileIdentifier FileAllocator::createFile(const char* path) {
     FileAttributes newFileAtt = FileAttributes();
     FileAllocationEntry fileEntry = FileAllocationEntry(this->fileCount, this->disk->getBlockSize(), newFileAtt);
+
     if (fat->addFileEntry(fileEntry) == 0) {
         FileAllocationEntry::fileIdentifier identifier = fileCount;
         this->fileCount++;
+        disk->writeBlock(new DiskAccessRequest(DiskAccessRequest::Operation::WRITE, fileCount, new HW_HardDisk::DiskSector()));
 
         return this->fileCount - 1;
     }
+
+    return -1;
 }

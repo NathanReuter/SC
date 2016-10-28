@@ -16,3 +16,19 @@ HW_HardDisk::blockNumber FileAllocationEntry::getBlock() {
 FileAllocationEntry::fileIdentifier FileAllocationEntry::getNode() {
     return inode;
 }
+
+FileAttributes FileAllocationEntry::getAttributes() {
+    return attributes;
+}
+
+void FileAllocationEntry::setAttributes(FileAttributes attributes) {
+    this->attributes = attributes;
+}
+
+void FileAllocationEntry::setBlock(HW_HardDisk::blockNumber block) {
+    this->block = block;
+}
+
+void FileAllocationEntry::setNode(fileIdentifier inode) {
+    this->inode = inode;
+}

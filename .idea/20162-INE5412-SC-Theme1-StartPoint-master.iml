@@ -7,7 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/ModuleInvoke_PulseExecution.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ModelBuilder.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Abstr_Alarm.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Simul_Debug.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Simul_Util.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_Timer.h" isTestSource="false" />
@@ -20,9 +19,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Queue.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProblemSolving20162ModelBuilder.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Scheduling_Queue.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HW_Machine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HW_MMU_Segmentation.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_CPU.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Directory.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Simul_Event.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Abstr_MemoryChunk.cpp" isTestSource="false" />
@@ -54,16 +53,17 @@
       <sourceFolder url="file://$MODULE_DIR$/oldies/ModuleInvoke_DiskScheduler.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/oldies/ModuleInvoke_InterruptHandler.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/oldies/ModuleInvoke_FileSystem.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HW_Machine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SourceModule.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProblemTester.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_RAM.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/FileAllocationEntry.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Util_Scheduling_Queue.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Abstr_FileAllocator.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving20162ModelBuilder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Directory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Simul_Entity.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mediator_Timer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Abstr_Thread.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Simul_Util.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Traits.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_MMU_Paging.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProblemTester.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Abstr_Thread.cpp" isTestSource="false" />
@@ -76,23 +76,26 @@
       <sourceFolder url="file://$MODULE_DIR$/Mediator_Timer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_MMU_Continuous.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/OperatingSystem.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HW_MMU_Continuous.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ModelBuilder.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mediator_DMA.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Simul_Statistics.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ModuleInvoke_HardwareEvent.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mediator_DMA.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_Timer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ModuleCreate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mediator_MMU.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_DMA.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Simul_Entity.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HW_MMU_Continuous.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ModuleCreate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Simul_Util.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FileAllocationEntry.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DirectoryEntry.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_DMA.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Util_Scheduling_Queue.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_MMU.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SourceModule.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Simul_Debug.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Simulator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Simul_Entity.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mediator_CPU.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mediator_HardDisk.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Abstr_FileSystem.cpp" isTestSource="false" />
@@ -104,7 +107,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Util_Queue.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Queue.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mediator_HardDisk.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Traits.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Abstr_Alarm.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Simul_Statistics.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Application.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ModuleDispose.cpp" isTestSource="false" />
@@ -117,11 +121,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Abstr_Scheduler.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Util_Queue.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Abstr_MemoryManager.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Util_Scheduling_Queue.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW_MMU_Paging.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Abstr_FileSystem.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ModuleInvoke_PulseExecution.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HW_MMU_Segmentation.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving20162ModelBuilder.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Abstr_Process.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

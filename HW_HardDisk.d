@@ -5,8 +5,8 @@ HW_HardDisk.o: HW_HardDisk.cpp HW_HardDisk.h Traits.h Simul_Debug.h \
  Util_Scheduling_Queue.h Mediator_CPU.h HW_CPU.h HW_Timer.h Simulator.h \
  Simul_Event.h OperatingSystem.h Application.h Abstr_FileSystem.h \
  Abstr_FileAllocationTable.h Mediator_HardDisk.h Abstr_FileAllocator.h \
- Mediator_DMA.h Mediator_MMU.h ModuleInvoke_HardwareEvent.h HW_Machine.h \
- HW_DMA.h HW_MMU_Continuous.h HW_MMU_Paging.h HW_RAM.h \
+ Directory.h Mediator_DMA.h Mediator_MMU.h ModuleInvoke_HardwareEvent.h \
+ HW_Machine.h HW_DMA.h HW_MMU_Continuous.h HW_MMU_Paging.h HW_RAM.h \
  HW_MMU_Segmentation.h
 
 HW_HardDisk.h:
@@ -64,6 +64,8 @@ Abstr_FileAllocationTable.h:
 Mediator_HardDisk.h:
 
 Abstr_FileAllocator.h:
+
+Directory.h:
 
 Mediator_DMA.h:
 

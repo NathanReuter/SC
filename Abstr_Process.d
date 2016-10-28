@@ -3,9 +3,10 @@ Abstr_Process.o: Abstr_Process.cpp Simul_Debug.h Module.h Simul_Entity.h \
  Abstr_Thread.h Util_Queue.h Mediator_Timer.h OperatingSystem.h \
  Application.h Mediator_CPU.h HW_CPU.h Abstr_Scheduler.h \
  Util_Scheduling_Queue.h Abstr_FileSystem.h Abstr_FileAllocationTable.h \
- Mediator_HardDisk.h HW_HardDisk.h Abstr_FileAllocator.h Mediator_DMA.h \
- Mediator_MMU.h Traits.h Model.h SourceModule.h Simul_Util.h HW_Timer.h \
- ModuleInvoke_HardwareEvent.h Simulator.h Simul_Event.h
+ Mediator_HardDisk.h HW_HardDisk.h Abstr_FileAllocator.h Directory.h \
+ Mediator_DMA.h Mediator_MMU.h Traits.h Model.h SourceModule.h \
+ Simul_Util.h HW_Timer.h ModuleInvoke_HardwareEvent.h Simulator.h \
+ Simul_Event.h
 
 Simul_Debug.h:
 
@@ -48,6 +49,8 @@ Mediator_HardDisk.h:
 HW_HardDisk.h:
 
 Abstr_FileAllocator.h:
+
+Directory.h:
 
 Mediator_DMA.h:
 

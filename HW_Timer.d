@@ -5,7 +5,7 @@ HW_Timer.o: HW_Timer.cpp HW_Timer.h Simulator.h Model.h Module.h \
  Abstr_Scheduler.h Util_Scheduling_Queue.h Mediator_CPU.h HW_CPU.h \
  HW_HardDisk.h OperatingSystem.h Application.h Abstr_FileSystem.h \
  Abstr_FileAllocationTable.h Mediator_HardDisk.h Abstr_FileAllocator.h \
- Mediator_DMA.h Mediator_MMU.h ModuleInvoke_HardwareEvent.h
+ Directory.h Mediator_DMA.h Mediator_MMU.h ModuleInvoke_HardwareEvent.h
 
 HW_Timer.h:
 
@@ -62,6 +62,8 @@ Abstr_FileAllocationTable.h:
 Mediator_HardDisk.h:
 
 Abstr_FileAllocator.h:
+
+Directory.h:
 
 Mediator_DMA.h:
 

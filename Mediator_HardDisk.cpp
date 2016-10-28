@@ -40,12 +40,16 @@ void HardDisk::flush() {
 }
 
 void HardDisk::writeBlock(DiskAccessRequest* request) {
-    
+    HW_HardDisk* hd = HW_Machine::HardDisk();
+    hd->setDataRegister(request->GetBlockNumber());
+    hd->setCommandRegister(HW_HardDisk::WRITE_LOGICALSECTOR);
 }
 
 
 void HardDisk::readBlock(DiskAccessRequest* request) {
-    
+    HW_HardDisk* hd = HW_Machine::HardDisk();
+    hd->setDataRegister(request->GetBlockNumber());
+    hd->setCommandRegister(HW_HardDisk::READ_LOGICALSECTOR);
 }
 
 void HardDisk::setBlockSize(const unsigned int blocksize) {
@@ -62,14 +66,11 @@ void HardDisk::accessBlock(DiskAccessRequest* request) {
 }
 
 unsigned int HardDisk::getBlockSize() {
-
+    return _blocksize;
 }
 
 void HardDisk::setMaxBlocks(const HW_HardDisk::blockNumber maxBlocks) {
     
-}
-
-HW_HardDisk::blockNumber getMaxBlocks() {
 }
 
 HW_HardDisk::blockNumber HardDisk::getMaxBlocks() {

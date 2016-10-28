@@ -16,6 +16,7 @@
 
 #include "Abstr_FileAllocationTable.h"
 #include "Abstr_FileAllocator.h"
+#include "Directory.h"
 
 /* Deve implementar o conceito de sistema de arquivos, como criar arquivo, procurar arquivo, deletar arquivo,
  * hierarquia de arquivos etc. Ainda não implementada.
@@ -25,16 +26,20 @@ class FileSystem {
     friend class ProblemTester;
 public:
     FileSystem();
-    FileSystem(const FileSystem& orig);
+//    FileSystem(const FileSystem& orig);
     virtual ~FileSystem();
 public:
     // INSERT YOUR CODE HERE
     int createFile();
-//    FileAllocationEntry::fileIdentifier searchFile(const unsigned char* path);
-//    int deleteFile();
+    void list(const char * path);
+    int makeDir(const char * name, const char path);
     // ...
 private:
     FileAllocator * fileAllocator;
+    Directory * rootDirectory;
+private:
+    Directory getPathDirectory(const char * path);
+    std::list<const char *> splitPath(const char * path);
 };
 
 #endif /* FILESYSTEM_H */

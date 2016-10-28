@@ -59,7 +59,7 @@ template<> struct Traits<Model> {
         Alarm12, I2C1141, SPI1142 };
     static const ProblemType   problemType = FileSystem; // SET HERE THE COMPUTACIONAL TYPE YOU ARE SOLVING (THE ONE YOU HAVE CHOOSEN AS TOUR "SC")
     static const ProblemSolving problemChoosen = Multilevel1103; // SET HERE THE COMPUTACIONAL SYSTEM YOU ARE SOLVING (THE ONE YOU HAVE CHOOSEN AS TOUR "SC")
-    static constexpr double simulationLength = 500.0; // time units
+    static constexpr double simulationLength = 1000.0; // time units
     static constexpr double firstCreation = 0.0;       // time units
 };
 

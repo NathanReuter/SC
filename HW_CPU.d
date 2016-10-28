@@ -6,7 +6,8 @@ HW_CPU.o: HW_CPU.cpp HW_CPU.h HW_MMU.h HW_Machine.h HW_DMA.h \
  Abstr_Scheduler.h Util_Scheduling_Queue.h Mediator_CPU.h HW_Timer.h \
  ModuleInvoke_HardwareEvent.h Application.h HW_MMU_Segmentation.h \
  OperatingSystem.h Abstr_FileSystem.h Abstr_FileAllocationTable.h \
- Mediator_HardDisk.h Abstr_FileAllocator.h Mediator_DMA.h Mediator_MMU.h
+ Mediator_HardDisk.h Abstr_FileAllocator.h Directory.h Mediator_DMA.h \
+ Mediator_MMU.h
 
 HW_CPU.h:
 
@@ -73,6 +74,8 @@ Abstr_FileAllocationTable.h:
 Mediator_HardDisk.h:
 
 Abstr_FileAllocator.h:
+
+Directory.h:
 
 Mediator_DMA.h:
 

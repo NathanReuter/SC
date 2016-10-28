@@ -4,9 +4,9 @@ main.o: main.cpp Simulator.h Model.h Module.h Simul_Entity.h \
  Abstr_MemoryManager.h Abstr_MemoryChunk.h HW_MMU.h Mediator_Timer.h \
  HW_CPU.h Abstr_Scheduler.h Util_Scheduling_Queue.h Simul_Debug.h \
  Abstr_FileSystem.h Abstr_FileAllocationTable.h Mediator_HardDisk.h \
- HW_HardDisk.h Abstr_FileAllocator.h Mediator_DMA.h Mediator_MMU.h \
- Traits.h HW_Timer.h ModuleInvoke_HardwareEvent.h ProblemTester.h \
- ModelBuilder.h ProblemSolving20162ModelBuilder.h
+ HW_HardDisk.h Abstr_FileAllocator.h Directory.h Mediator_DMA.h \
+ Mediator_MMU.h Traits.h HW_Timer.h ModuleInvoke_HardwareEvent.h \
+ ProblemTester.h ModelBuilder.h ProblemSolving20162ModelBuilder.h
 
 Simulator.h:
 
@@ -59,6 +59,8 @@ Mediator_HardDisk.h:
 HW_HardDisk.h:
 
 Abstr_FileAllocator.h:
+
+Directory.h:
 
 Mediator_DMA.h:
 
