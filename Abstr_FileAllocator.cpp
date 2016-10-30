@@ -17,15 +17,33 @@
 FileAllocator::FileAllocator(HardDisk* disk, FileAllocationTable* fat) {
     this->disk = disk;
     this->fat = fat;
+    /* Creates a root entry directory*/
+    FileAttributes rootAtt = FileAttributes();
+    rootAtt.setFilename("/");
+    rootAtt.setType(FileAttributes::fileType::dir);
+    this->rootEntry = getNewId();
+//    fat->addFileEntry(FileAllocationEntry(this->fileCount, this->getNextFreeBlock(), rootAtt));
+//    std::cout << "dsaddsa" << std::endl;
+//    disk->writeBlock()
+//    Initializing freeblocks
+    for (int i = 0; i < disk->getMaxBlocks(); ++i) {
+        freeBlocks.push_back(i);
+    }
 }
 
 FileAllocator::FileAllocator(const FileAllocator& orig) {
 }
 
+HW_HardDisk::blockNumber FileAllocator::getNextFreeBlock() {
+    HW_HardDisk::blockNumber block = freeBlocks.front();
+    freeBlocks.erase(freeBlocks.begin());
+
+    return block;
+}
 /* Create an file*/
-FileAllocationEntry::fileIdentifier FileAllocator::createFile(const char* path) {
+HW_HardDisk::blockNumber FileAllocator::createFile(const char *path) {
     FileAttributes newFileAtt = FileAttributes();
-    FileAllocationEntry fileEntry = FileAllocationEntry(this->fileCount, this->disk->getBlockSize(), newFileAtt);
+    FileAllocationEntry fileEntry = FileAllocationEntry(this->fileCount, this->getNextFreeBlock(), newFileAtt);
 
     if (fat->addFileEntry(fileEntry) == 0) {
         FileAllocationEntry::fileIdentifier identifier = fileCount;
@@ -36,4 +54,16 @@ FileAllocationEntry::fileIdentifier FileAllocator::createFile(const char* path) 
     }
 
     return -1;
+}
+
+bool FileAllocator::hasFreeBlocks() {
+    if (freeBlocks.size() == 0) {
+        return false;
+    }
+
+    return true;
+}
+
+FileAllocationEntry::fileIdentifier FileAllocator::getNewId() {
+    return fileCount++;
 }

@@ -2,6 +2,7 @@
 // Created by nathan on 28/10/16.
 //
 
+#include <iostream>
 #include "Directory.h"
 
 Directory::Directory(const char *name) : name(name){};

@@ -24,17 +24,17 @@ class FileAttributes {
 public:
     FileAttributes();
 public:
-    enum fileType {a ,d ,c ,b , l};
+    enum fileType {a ,dir ,c ,b , l};
     
-    char* getFilename();
-    void setFilename(char* filename);
+    const char* getFilename();
+    void setFilename(const char* filename);
     unsigned long getSize();
     void setSize(unsigned long size);
     fileType getType();
     void setType(fileType type);
     void showAttributes();
 private:
-    char* filename;
+    const char* filename;
     unsigned long size;
     fileType type;
 };
@@ -50,7 +50,7 @@ class FileAllocationEntry {
 public: 
     typedef unsigned int fileIdentifier;
 public:
-    FileAllocationEntry(fileIdentifier inode, HW_HardDisk::blockNumber block, FileAttributes attributes);
+    FileAllocationEntry(fileIdentifier fileid, HW_HardDisk::blockNumber block, FileAttributes attributes);
 public:
     fileIdentifier getNode();
     HW_HardDisk::blockNumber getBlock();
@@ -59,7 +59,7 @@ public:
     void setBlock(HW_HardDisk::blockNumber block);
     void setAttributes(FileAttributes attributes);    
 private:
-    fileIdentifier inode;
+    fileIdentifier id;
     HW_HardDisk::blockNumber block;
     FileAttributes attributes;
 };

@@ -32,13 +32,13 @@ public:
     // INSERT YOUR CODE HERE
     int createFile();
     void list(const char * path);
-    int makeDir(const char * name, const char path);
+    int makeDir(const char * name, const char * path);
     // ...
 private:
     FileAllocator * fileAllocator;
     Directory * rootDirectory;
 private:
-    Directory getPathDirectory(const char * path);
+    Directory * getPathDirectory(const char * path);
     std::list<const char *> splitPath(const char * path);
 };
 

@@ -27,7 +27,7 @@ public:
     FileAllocator(HardDisk* disk, FileAllocationTable* fat);
     FileAllocator(const FileAllocator& orig);
 public:
-    FileAllocationEntry::fileIdentifier createFile(const char* path);
+    HW_HardDisk::blockNumber createFile(const char *path);
     void removeFile(const unsigned char* path);
     
     FileAllocationEntry::fileIdentifier openFile(const char* path);
@@ -37,11 +37,16 @@ public:
     unsigned int writeFile(const FileAllocationEntry::fileIdentifier file, const unsigned int numBytes, char* bufferBytes);
     
     void seek(const unsigned long numByte);
+    bool hasFreeBlocks();
+    HW_HardDisk::blockNumber getNextFreeBlock();
 private:
 private:
+    FileAllocationEntry::fileIdentifier getNewId();
     HardDisk* disk;
     FileAllocationTable* fat;
-    int fileCount = 0;
+    FileAllocationEntry::fileIdentifier rootEntry;
+    FileAllocationEntry::fileIdentifier fileCount = 0;
+    std::vector<HW_HardDisk::blockNumber> freeBlocks;
 };
 
 #endif /* FILEALLOCATOR_H */

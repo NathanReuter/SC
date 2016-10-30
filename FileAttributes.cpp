@@ -9,7 +9,7 @@ using namespace std;
 FileAttributes::FileAttributes() {
 }
 
-void FileAttributes::setFilename(char *filename) {
+void FileAttributes::setFilename(const char *filename) {
     this->filename = filename;
 }
 
@@ -21,7 +21,7 @@ void FileAttributes::setType(fileType type) {
     this->type = type;
 }
 
-char* FileAttributes::getFilename() {
+const char* FileAttributes::getFilename() {
     return filename;
 }
 

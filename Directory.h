@@ -31,7 +31,7 @@ private:
 
 class Directory {
     public:
-        enum SearchType {FILE, DIR, BOTH};
+        enum SearchType {FILE, DIRECTORY, BOTH};
     public:
         Directory(const char* name);
 

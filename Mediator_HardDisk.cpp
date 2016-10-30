@@ -21,6 +21,8 @@ HardDisk::HardDisk(unsigned int instance) {
     _blocksize = hd->getDataRegister();
     hd->setCommandRegister(HW_HardDisk::GET_TOTALSECTORS);
     _maxBlocks = hd->getDataRegister();
+
+//    std::cout << _maxBlocks;
 }
 
 HardDisk::HardDisk(const HardDisk& orig) {

@@ -4,8 +4,8 @@
 
 #include "Abstr_FileAllocationTable.h"
 
-FileAllocationEntry::FileAllocationEntry(fileIdentifier inode, HW_HardDisk::blockNumber block,
-                                         FileAttributes attributes) : inode(inode), block(block), attributes(attributes) {
+FileAllocationEntry::FileAllocationEntry(fileIdentifier fileid, HW_HardDisk::blockNumber block,
+                                         FileAttributes attributes) : id(fileid), block(block), attributes(attributes) {
 
 }
 
@@ -14,7 +14,7 @@ HW_HardDisk::blockNumber FileAllocationEntry::getBlock() {
 }
 
 FileAllocationEntry::fileIdentifier FileAllocationEntry::getNode() {
-    return inode;
+    return id;
 }
 
 FileAttributes FileAllocationEntry::getAttributes() {
@@ -29,6 +29,6 @@ void FileAllocationEntry::setBlock(HW_HardDisk::blockNumber block) {
     this->block = block;
 }
 
-void FileAllocationEntry::setNode(fileIdentifier inode) {
-    this->inode = inode;
+void FileAllocationEntry::setNode(fileIdentifier id) {
+    this->id = id;
 }
