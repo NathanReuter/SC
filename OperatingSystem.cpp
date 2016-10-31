@@ -56,10 +56,11 @@ void OperatingSystem::ExecuteTestCode() {
     // INSERT HERE YOUR CODE
     // You can write a test code that will be executed and will invoke system calls or whenever you want
     std::cout << "File System Create File "  << std::endl;
-    File_System()->makeDir("test", "/");
-    File_System()->makeDir("test2", "/");
-    File_System()->makeDir("test3", "/");
-    File_System()->list("/");
+//    File_System()->makeDir("test", "/");
+//    File_System()->makeDir("test2", "/");
+//    File_System()->makeDir("test3", "/");
+//    File_System()->list("/");
+    File_System()->createFile();
     // Follow the examples...
 //    HardDisk_Mediator()->readBlock(new DiskAccessRequest(DiskAccessRequest::Operation::READ, 0, new HW_HardDisk::DiskSector()));
 //    std::cout << "asdsa " << *HW_Machine::HardDisk()->getStreamRegister() << std::endl;

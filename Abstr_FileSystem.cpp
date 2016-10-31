@@ -39,9 +39,13 @@ void FileSystem::list(const char *path) {
 }
 
 int FileSystem::createFile() {
-//    fileAllocator->createFile();
+    FileAttributes att = FileAttributes();
+    att.setFilename("AAAAA");
+    att.setType(FileAttributes::fileType::c);
+    fileAllocator->createFile("/", att);
     return 0;
 }
+
 
 std::list<const char *> FileSystem::splitPath(const char *path) {
     const int maxPathLength = 255; //Just for test
@@ -73,7 +77,6 @@ std::list<const char *> FileSystem::splitPath(const char *path) {
  * @param path {const char * path}. Path to be created
  * @return {int}. 0 on success, and -1 on error*/
 int FileSystem::makeDir(const char *name, const char * path) {
-    std::cout << "adsadasd" << std::endl;
     try {
         Directory * currentDir = getPathDirectory(path);
 

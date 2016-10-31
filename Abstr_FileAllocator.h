@@ -27,7 +27,7 @@ public:
     FileAllocator(HardDisk* disk, FileAllocationTable* fat);
     FileAllocator(const FileAllocator& orig);
 public:
-    HW_HardDisk::blockNumber createFile(const char *path);
+    void createFile(const char *path, FileAttributes newFileAtt);
     void removeFile(const unsigned char* path);
     
     FileAllocationEntry::fileIdentifier openFile(const char* path);
@@ -35,11 +35,19 @@ public:
     
     unsigned int readFile(const FileAllocationEntry::fileIdentifier file, const unsigned int numBytes, char* bufferBytes);
     unsigned int writeFile(const FileAllocationEntry::fileIdentifier file, const unsigned int numBytes, char* bufferBytes);
-    
-    void seek(const unsigned long numByte);
+
     bool hasFreeBlocks();
     HW_HardDisk::blockNumber getNextFreeBlock();
 private:
+    void initRootDirectory();
+    std::string newFileDiskData(FileAttributes att, std::list<int> nodes);
+    std::string createAttributesDiskData(FileAttributes att);
+    std::string createFileDiskInodes(std::list<int> nodes);
+    std::string createDirEntry(int block, FileAttributes att);
+    std::list<int> getFileDisksInodes(const char *fileData);
+    void writeToDisk(HW_HardDisk::blockNumber block, std::string data);
+    std::string readFromDisk(HW_HardDisk::blockNumber block);
+    const char * readFileInode();
 private:
     FileAllocationEntry::fileIdentifier getNewId();
     HardDisk* disk;
